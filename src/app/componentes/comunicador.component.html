@@ -1,0 +1,14 @@
+<div class="row">
+    <div class="form-group col-6">
+        <label for="mensajeTexto">Mensaje: </label>
+        <input type="text" class="form-control" 
+             #mensaje name="mensaje">
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="form-group col-6">
+        <button class="btn btn-primary" (click)="enviarMensaje(mensaje.value)">
+            Enviar mensaje
+        </button>
+    </div>
+</div>
